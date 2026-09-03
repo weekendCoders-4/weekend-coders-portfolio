@@ -76,7 +76,7 @@ export function Contact() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
@@ -98,7 +98,10 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="relative border-t border-border/50 py-24 lg:py-32">
+    <section
+      id="contact"
+      className="relative border-t border-border/50 py-24 lg:py-32"
+    >
       <Container>
         <div className="grid gap-12 lg:grid-cols-5 lg:gap-16">
           <div className="lg:col-span-2">
@@ -111,7 +114,7 @@ export function Contact() {
 
             <div className="mt-8 space-y-4">
               <a
-                href="mailto:hello@weekendcoders.dev"
+                href="mailto:weekendcoders4@gmail.com"
                 className="flex items-center gap-3 font-mono text-sm text-cyan-400 transition-colors hover:text-cyan-300"
               >
                 <Mail className="h-4 w-4" />
@@ -193,10 +196,15 @@ export function Contact() {
                         className={inputClasses}
                         placeholder="Your name"
                         aria-invalid={!!errors.name}
-                        aria-describedby={errors.name ? "name-error" : undefined}
+                        aria-describedby={
+                          errors.name ? "name-error" : undefined
+                        }
                       />
                       {errors.name && (
-                        <p id="name-error" className="mt-1 text-xs text-red-400">
+                        <p
+                          id="name-error"
+                          className="mt-1 text-xs text-red-400"
+                        >
                           {errors.name}
                         </p>
                       )}
@@ -215,10 +223,15 @@ export function Contact() {
                         className={inputClasses}
                         placeholder="you@company.com"
                         aria-invalid={!!errors.email}
-                        aria-describedby={errors.email ? "email-error" : undefined}
+                        aria-describedby={
+                          errors.email ? "email-error" : undefined
+                        }
                       />
                       {errors.email && (
-                        <p id="email-error" className="mt-1 text-xs text-red-400">
+                        <p
+                          id="email-error"
+                          className="mt-1 text-xs text-red-400"
+                        >
                           {errors.email}
                         </p>
                       )}
@@ -260,13 +273,16 @@ export function Contact() {
                       }
                     />
                     {errors.project && (
-                      <p id="project-error" className="mt-1 text-xs text-red-400">
+                      <p
+                        id="project-error"
+                        className="mt-1 text-xs text-red-400"
+                      >
                         {errors.project}
                       </p>
                     )}
                   </div>
 
-                  <div className="grid gap-5 sm:grid-cols-2">
+                  {/* <div className="grid gap-5 sm:grid-cols-2">
                     <div>
                       <label htmlFor="budget" className={labelClasses}>
                         Budget range <span className="text-red-400">*</span>
@@ -290,7 +306,10 @@ export function Contact() {
                         ))}
                       </select>
                       {errors.budget && (
-                        <p id="budget-error" className="mt-1 text-xs text-red-400">
+                        <p
+                          id="budget-error"
+                          className="mt-1 text-xs text-red-400"
+                        >
                           {errors.budget}
                         </p>
                       )}
@@ -319,14 +338,21 @@ export function Contact() {
                         ))}
                       </select>
                       {errors.timeline && (
-                        <p id="timeline-error" className="mt-1 text-xs text-red-400">
+                        <p
+                          id="timeline-error"
+                          className="mt-1 text-xs text-red-400"
+                        >
                           {errors.timeline}
                         </p>
                       )}
                     </div>
-                  </div>
+                  </div> */}
 
-                  <Button type="submit" variant="primary" className="w-full sm:w-auto">
+                  <Button
+                    type="submit"
+                    variant="primary"
+                    className="w-full sm:w-auto"
+                  >
                     Send Project Brief →
                   </Button>
                 </motion.form>

@@ -10,9 +10,9 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { icon: GitHubIcon, href: "https://github.com", label: "GitHub" },
+  // { icon: GitHubIcon, href: "https://github.com", label: "GitHub" },
   { icon: LinkedInIcon, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:hello@weekendcoders.dev", label: "Email" },
+  { icon: Mail, href: "mailto:weekendcoders4@gmail.com", label: "Email" },
 ];
 
 export function Footer() {

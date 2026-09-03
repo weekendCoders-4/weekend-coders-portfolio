@@ -2,7 +2,6 @@ import { useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle, Mail } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "../ui/SocialIcons";
-import { budgetOptions, timelineOptions } from "../../data/site";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Button } from "../ui/Button";

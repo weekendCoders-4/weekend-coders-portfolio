@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import { GitHubIcon, LinkedInIcon } from "../ui/SocialIcons";
+import { LinkedInIcon } from "../ui/SocialIcons";
 import { Container } from "../ui/Container";
 
 const footerLinks = [

@@ -32,17 +32,20 @@ export const processSteps = [
   {
     step: "01",
     title: "Talk",
-    description: "Tell us what you're trying to build. No sales pitch, just engineers listening.",
+    description:
+      "Tell us what you're trying to build. No sales pitch, just engineers listening.",
   },
   {
     step: "02",
     title: "Plan",
-    description: "We figure out the architecture, scope, and timeline together.",
+    description:
+      "We figure out the architecture, scope, and timeline together.",
   },
   {
     step: "03",
     title: "Build",
-    description: "We design, code, test, and iterate. works on my machine™ — then yours too.",
+    description:
+      "We design, code, test, and iterate. works on my machine™ — then yours too.",
   },
   {
     step: "04",
@@ -70,7 +73,7 @@ export const whyUsPoints = [
   {
     title: "Small team, big output",
     description:
-      "Four developers who actually work together can move surprisingly fast. 404: weekend not found.",
+      "Four developers who actually work together can move surprisingly fast.",
   },
 ];
 

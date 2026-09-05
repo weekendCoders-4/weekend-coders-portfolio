@@ -5,6 +5,12 @@ import { GitHubIcon, LinkedInIcon } from "../ui/SocialIcons";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Button } from "../ui/Button";
+import {
+  EMAIL_PLACEHOLDER,
+  EMAIL_HREF,
+  GITHUB_URL,
+  LINKEDIN_URL,
+} from "../../data/socials";
 
 interface FormData {
   name: string;
@@ -49,14 +55,6 @@ function validateForm(data: FormData): FormErrors {
     errors.project = "Tell us what you want to build";
   } else if (data.project.trim().length < 10) {
     errors.project = "Please provide a bit more detail";
-  }
-
-  if (!data.budget) {
-    errors.budget = "Please select a budget range";
-  }
-
-  if (!data.timeline) {
-    errors.timeline = "Please select a timeline";
   }
 
   return errors;
@@ -113,15 +111,15 @@ export function Contact() {
 
             <div className="mt-8 space-y-4">
               <a
-                href="mailto:weekendcoders4@gmail.com"
+                href={EMAIL_HREF}
                 className="flex items-center gap-3 font-mono text-sm text-cyan-400 transition-colors hover:text-cyan-300"
               >
                 <Mail className="h-4 w-4" />
-                hello@weekendcoders.dev
+                {EMAIL_PLACEHOLDER}
               </a>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com"
+                  href={GITHUB_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
@@ -130,7 +128,7 @@ export function Contact() {
                   <GitHubIcon className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href={LINKEDIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"

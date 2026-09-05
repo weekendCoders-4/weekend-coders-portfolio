@@ -6,6 +6,7 @@ import {
   Server,
   Sparkles,
   Code2,
+  Smartphone,
 } from "lucide-react";
 
 export interface Service {
@@ -24,6 +25,20 @@ export const services: Service[] = [
       "Full-stack applications built around real business requirements — not slide decks.",
     icon: Layout,
     tags: ["React", "TypeScript", "PostgreSQL", "FastAPI"],
+  },
+  {
+    id: "mobile",
+    title: "Mobile Apps",
+    description:
+      "Cross-platform mobile apps for iOS and Android, built from a single React Native codebase.",
+    icon: Smartphone,
+    tags: [
+      "React Native",
+      "TypeScript",
+      "Expo",
+      "React Native CLI",
+      "iOS & Android",
+    ],
   },
   {
     id: "websites",
@@ -55,14 +70,6 @@ export const services: Service[] = [
     description:
       "AI assistants, intelligent workflows, and AI-enabled applications that solve real problems.",
     icon: Sparkles,
-    tags: ["OpenAI", "Python", "FastAPI", "AI"],
-  },
-  {
-    id: "custom",
-    title: "Custom Software",
-    description:
-      "If it involves code, we'll figure it out. // probably should have used git",
-    icon: Code2,
-    tags: ["Python", "JavaScript", "React", "AWS"],
+    tags: ["OpenAI", "Python", "FastAPI", "LangChain"],
   },
 ];

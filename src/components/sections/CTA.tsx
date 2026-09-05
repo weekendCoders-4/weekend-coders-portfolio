@@ -3,6 +3,7 @@ import { Button } from "../ui/Button";
 import { Container } from "../ui/Container";
 import { TiltCard } from "../ui/TiltCard";
 import { useReducedMotion } from "../../hooks/useReducedMotion";
+import { EMAIL_PLACEHOLDER, EMAIL_HREF } from "../../data/socials";
 
 export function CTA() {
   const reducedMotion = useReducedMotion();
@@ -21,7 +22,10 @@ export function CTA() {
               <div className="pointer-events-none absolute inset-0 grid-bg opacity-30" />
               <div className="pointer-events-none absolute top-0 left-1/2 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent" />
 
-              <div className="relative" style={{ transform: "translateZ(30px)" }}>
+              <div
+                className="relative"
+                style={{ transform: "translateZ(30px)" }}
+              >
                 <p className="mb-4 font-mono text-xs tracking-widest text-cyan-400/80 uppercase">
                   Let&apos;s build something
                 </p>
@@ -30,16 +34,16 @@ export function CTA() {
                   <span className="gradient-text-animated">built?</span>
                 </h2>
                 <p className="mx-auto mt-5 max-w-lg text-lg text-text-secondary">
-                  Tell us what you&apos;re thinking. We&apos;ll tell you how we&apos;d
-                  build it.
+                  Tell us what you&apos;re thinking. We&apos;ll tell you how
+                  we&apos;d build it.
                 </p>
 
                 <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <Button href="#contact" variant="primary">
                     Start a Project →
                   </Button>
-                  <Button href="mailto:hello@weekendcoders.dev" variant="secondary">
-                    hello@weekendcoders.dev
+                  <Button href={EMAIL_HREF} variant="secondary">
+                    {EMAIL_PLACEHOLDER}
                   </Button>
                 </div>
               </div>

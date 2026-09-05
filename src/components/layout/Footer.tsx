@@ -1,6 +1,7 @@
 import { Mail } from "lucide-react";
-import { LinkedInIcon } from "../ui/SocialIcons";
+import { GitHubIcon, LinkedInIcon } from "../ui/SocialIcons";
 import { Container } from "../ui/Container";
+import { EMAIL_HREF, GITHUB_URL, LINKEDIN_URL } from "../../data/socials";
 
 const footerLinks = [
   { label: "Work", href: "#work" },
@@ -10,9 +11,9 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  // { icon: GitHubIcon, href: "https://github.com", label: "GitHub" },
-  { icon: LinkedInIcon, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:weekendcoders4@gmail.com", label: "Email" },
+  { icon: GitHubIcon, href: GITHUB_URL, label: "GitHub" },
+  { icon: LinkedInIcon, href: LINKEDIN_URL, label: "LinkedIn" },
+  { icon: Mail, href: EMAIL_HREF, label: "Email" },
 ];
 
 export function Footer() {
